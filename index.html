@@ -56,7 +56,7 @@
       <div class="ring"><img src="photo.png" alt="Photo de Kassirath BADIROU"><span class="init" hidden>KB</span></div>
       <p class="kick">Bienvenue sur le portfolio de</p>
       <h1>Kassirath <span class="grad">BADIROU</span></h1>
-      <p class="option">Option SISR TEST</p>
+      <p class="option">Option SISR</p>
       <p class="lead">Étudiante en BTS SIO option SISR à l'Institut F2I. Passionnée par les infrastructures réseau, les systèmes et la cybersécurité, je développe mes compétences en administration systèmes et réseaux.</p>
       <div class="duo-hero">
         <div class="visu"><img src="cyb.jpg" alt=""><div class="visu-txt"><span class="ico"><svg class="i"><use href="#i-shield"/></svg></span><div><h4>Cybersécurité</h4><p>Pare-feu, sécurisation, veille</p></div></div></div>
@@ -113,11 +113,12 @@
           <div class="tl-card">
             <h4>Stagiaire Informatique / Systèmes et Réseaux</h4>
             <span class="tl-lieu">Institut F2I, Vincennes</span>
-            <small>Mai 2026 – Juin 2026</small>
+            <small>11Mai 2026 – 21Juin 2026</small>
             <ul>
-              <li>Assistance et support technique : traitement de tickets avec GLPI, diagnostic et résolution d'incidents.</li>
-              <li>Maintenance de premier niveau du parc informatique (ordinateurs, imprimantes).</li>
-              <li>Participation à des tâches réseau : configuration et suivi de commutateurs, câblage, découverte de l'architecture réseau.</li>
+              <li>Participation à la mise en place d'un failover DHCP pour assurer la continuité du service en cas de panne serveur.</li>
+              <li>Découverte de Windows Deployment Services (WDS) et de DFS pour le partage de fichiers distribué.</li>
+              <li>Création et modification de règles de sécurité sur un pare-feu FortiGate, configuration des interfaces, du routeur et des sous-réseaux.</li>
+              <li>Opérations de câblage réseau : préparation, raccordement et organisation.</li>
             </ul>
           </div>
         </div>
@@ -247,51 +248,22 @@
     <div class="in large">
       <span class="badge"><svg class="i"><use href="#i-code"/></svg>Mes réalisations</span>
       <h2 class="h2-grand">Projets</h2>
-      <p class="sous">Projets réalisés durant ma formation BTS SIO SISR.</p>
-
-      <select id="filtre" class="filtre" aria-label="Filtrer les projets">
-        <option value="tous">Tous les projets</option>
-        <option value="sys">Systèmes</option>
-        <option value="res">Réseaux</option>
-        <option value="sec">Sécurité</option>
-        <option value="web">Web</option>
-      </select>
+      <p class="sous">Projets de routage et de réseau réalisés durant ma formation BTS SIO SISR.</p>
 
       <div class="cartes" id="cartes">
-        <article class="pcard" data-cat="sec">
-          <span class="ico g-cy"><svg class="i"><use href="#i-shield"/></svg></span>
-          <h3>Déploiement d'un pare-feu pfSense</h3>
-          <p>Installation et configuration de pfSense en environnement virtuel, règles de filtrage, gestion des accès LAN/WAN et sécurisation des flux.</p>
-          <ul class="tags"><li>pfSense</li><li>Filtrage</li><li>LAN/WAN</li></ul>
-          <a class="btn-doc" href="documents/pfsense.pdf" target="_blank" rel="noopener">Voir le projet ↗</a>
-        </article>
-        <article class="pcard vi" data-cat="web">
-          <span class="ico g-vi"><svg class="i"><use href="#i-globe"/></svg></span>
-          <h3>Création d'un site web</h3>
-          <p>Développement d'un site en HTML/CSS et PHP ou CMS, avec base de données SQL et mise en ligne locale.</p>
-          <ul class="tags"><li>HTML/CSS</li><li>PHP</li><li>SQL</li></ul>
-          <a class="btn-doc" href="documents/site-web.pdf" target="_blank" rel="noopener">Voir le projet ↗</a>
-        </article>
         <article class="pcard vt" data-cat="res">
           <span class="ico g-vt"><svg class="i"><use href="#i-server"/></svg></span>
           <h3>Routage OSPF inter-VLAN</h3>
-          <p>Configuration de plusieurs VLAN et du routage OSPF entre deux routeurs, dans Cisco Packet Tracer.</p>
-          <ul class="tags"><li>Packet Tracer</li><li>OSPF</li><li>VLAN</li></ul>
-          <a class="btn-doc" href="documents/ospf.pdf" target="_blank" rel="noopener">Voir le projet ↗</a>
+          <p>Deux routeurs et plusieurs VLAN sous Cisco Packet Tracer : routage inter-VLAN, OSPF, HSRP, SSH et EtherChannel.</p>
+          <ul class="tags"><li>Packet Tracer</li><li>OSPF</li><li>HSRP</li><li>EtherChannel</li></ul>
+          <a class="btn-doc" href="documents/ospf.pdf" target="_blank" rel="noopener">Voir le projet <svg class="i"><use href="#i-ext"/></svg></a>
         </article>
-        <article class="pcard ja" data-cat="sys">
-          <span class="ico g-ja"><svg class="i"><use href="#i-folder"/></svg></span>
-          <h3>Installation de GLPI sur Debian</h3>
-          <p>Mise en place de GLPI sur un serveur Debian (Apache, PHP, base de données) pour la gestion de parc et des tickets.</p>
-          <ul class="tags"><li>GLPI</li><li>Debian</li><li>LAMP</li></ul>
-          <a class="btn-doc" href="documents/glpi.pdf" target="_blank" rel="noopener">Voir le projet ↗</a>
-        </article>
-        <article class="pcard ro" data-cat="sys">
-          <span class="ico g-ro"><svg class="i"><use href="#i-clip"/></svg></span>
-          <h3>Installation d'une VM d'audit</h3>
-          <p>Création d'une machine virtuelle d'audit sur Proxmox pour la journalisation des services.</p>
-          <ul class="tags"><li>Proxmox</li><li>Linux</li><li>Journalisation</li></ul>
-          <a class="btn-doc" href="documents/vm-audit.pdf" target="_blank" rel="noopener">Voir le projet ↗</a>
+        <article class="pcard" data-cat="res">
+          <span class="ico g-cy"><svg class="i"><use href="#i-wifi"/></svg></span>
+          <h3>VLAN, NAT et router-on-a-stick</h3>
+          <p>Infrastructure avec 3 VLAN (10, 20 et 99), routage inter-VLAN par router-on-a-stick, NAT overload, DNS et HTTP, et diagnostic d'un incident DNS.</p>
+          <ul class="tags"><li>VLAN</li><li>NAT</li><li>Router-on-a-stick</li><li>DNS</li></ul>
+          <a class="btn-doc" href="documents/vlan-nat.pdf" target="_blank" rel="noopener">Voir le projet <svg class="i"><use href="#i-ext"/></svg></a>
         </article>
       </div>
     </div>
@@ -402,28 +374,20 @@
     <div class="in">
       <span class="badge"><svg class="i"><use href="#i-star"/></svg>Épreuve E6</span>
       <h2 class="h2-grand">Épreuve E6</h2>
-      <p class="sous">Situations professionnelles significatives – Cybersécurité des services informatiques.</p>
+      <p class="sous">Situation professionnelle – Cybersécurité des services informatiques.</p>
 
       <div class="situation">
         <p class="etape"><span class="s">S1</span> Situation 1</p>
-        <h3>Déploiement d'un pare-feu pfSense</h3>
-        <p class="meta cy">⌖ Institut F2I, Vincennes – 2026</p>
-        <p>Mise en place de pfSense en environnement virtuel : installation, règles de filtrage, gestion des accès LAN/WAN et sécurisation des flux.</p>
+        <h3>Déploiement de GLPI interconnecté à Active Directory et gestion des habilitations</h3>
+        <p class="meta cy"><svg class="i"><use href="#i-pin"/></svg> Institut F2I, Vincennes – octobre à novembre 2026</p>
+        <p>Mise en place d'une solution de gestion de services (GLPI) reliée à un annuaire Windows Server Active Directory : synchronisation LDAP avec un compte de service en lecture seule, puis gestion des habilitations par profils (Super-Admin, Technician, Self-Service) selon le principe du moindre privilège, validée par un cahier de recette de 5 tests.</p>
         <p class="boutons">
-          <a class="btn-doc inline" href="documents/fiche-de-garde-s1.pdf" target="_blank" rel="noopener">Fiche de garde ↗</a>
-          <a class="btn-doc inline vi" href="documents/pfsense.pdf" target="_blank" rel="noopener">Documentation pfSense ↗</a>
+          <a class="btn-doc inline" href="documents/dossier-technique-e6-glpi.pdf" target="_blank" rel="noopener">Dossier technique – mise en place <svg class="i"><use href="#i-ext"/></svg></a>
         </p>
         <div class="sit-bas">
-          <div><small>Outils</small><ul class="tags"><li>pfSense</li><li>Proxmox / VMware</li><li>Windows</li></ul></div>
-          <div><small>Bilan</small><p>[Résultats obtenus : ce qui fonctionne, ce que tu as appris.]</p></div>
+          <div><small>Outils</small><ul class="tags"><li>GLPI 11</li><li>Active Directory</li><li>LDAP</li><li>Debian 13</li><li>Windows Server</li></li><li>Proxmox VE</li></ul></div>
+          <div><small>Bilan</small><p>Les 5 tests de la recette sont validés : chaque profil a bien accès uniquement à ses fonctions. Pistes d'amélioration : chiffrer la liaison (LDAPS, HTTPS) et réaliser le workflow complet des tickets.</p></div>
         </div>
-      </div>
-
-      <div class="situation">
-        <p class="etape"><span class="s">S2</span> Situation 2</p>
-        <h3>[Titre de ta deuxième situation]</h3>
-        <p class="meta cy">⌖ [Lieu] – [Période]</p>
-        <p>[Contexte et travail réalisé.]</p>
       </div>
     </div>
   </section>
@@ -504,13 +468,6 @@
       }).catch(() => {});
     });
   }
-
-  /* Filtre des projets */
-  document.getElementById("filtre").addEventListener("change", (e) => {
-    document.querySelectorAll("#cartes .pcard").forEach((c) => {
-      c.style.display = (e.target.value === "tous" || c.dataset.cat === e.target.value) ? "" : "none";
-    });
-  });
 
   /* Formulaire : ouvre la messagerie du visiteur */
   document.getElementById("form-contact").addEventListener("submit", (e) => {
