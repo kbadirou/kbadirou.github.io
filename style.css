@@ -283,3 +283,18 @@ a.indispo{opacity:.45;pointer-events:none;filter:grayscale(.6)}
 section{position:relative;border-top:1px solid #2a3556}
 section.hero{border-top:0}
 section:not(.hero)::before{content:"";position:absolute;top:-1px;left:50%;transform:translateX(-50%);width:min(520px,60%);height:3px;border-radius:3px;background:linear-gradient(90deg,transparent,var(--cy),var(--vi),transparent)}
+
+/* Carte d'étape violette (stage) */
+.situation.vi{border-color:#3b2a66}
+.situation.vi .etape{color:#c084fc}
+.situation.vi .etape .s{background:var(--vi);color:#fff}
+.situation.vi .tags li{border-color:#4c2a7a;background:rgba(168,85,247,.1);color:#c084fc}
+.situation.vi .btn-doc{border-color:#4c2a7a;background:rgba(168,85,247,.1);color:#c084fc}
+.situation.vi .btn-doc:hover{background:rgba(168,85,247,.2)}
+.situation .meta{color:var(--muted);margin:0 0 .8rem}
+.situation .poste{font-weight:600;margin:.2rem 0 1rem}
+.situation .coches{margin-bottom:1.5rem}
+.stage .boutons{margin:1.5rem 0 0}
+.stage{margin-top:1.5rem}
+.stage .coches li{display:flex;gap:.8rem;align-items:flex-start}.stage .coches li::before{flex:none}
+.stage .coches li::before{margin-right:0}
